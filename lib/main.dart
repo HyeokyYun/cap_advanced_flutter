@@ -1,6 +1,8 @@
 import 'package:cap_advanced_flutter/rive/rives.dart';
 import 'package:flutter/material.dart';
 
+import 'lottie/lotties.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -77,6 +79,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 );
               },
               child: const Text('Rive'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const LottieExample()),
+                );
+              },
+              child: const Text('Lottie'),
             ),
           ],
         )
